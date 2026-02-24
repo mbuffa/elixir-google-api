@@ -26,6 +26,7 @@ defmodule GoogleApis.OauthStrategy do
       token_url: "/o/oauth2/token",
       redirect_uri: "http://localhost/auth/callback"
     )
+    |> OAuth2.Client.put_serializer("application/json", Jason)
   end
 
   def authorize_url!(client, params \\ []) do
