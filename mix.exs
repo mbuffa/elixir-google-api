@@ -46,7 +46,9 @@ defmodule GoogleApis.Mixfile do
     [
       {:google_api_discovery, "~> 0.12.0"},
       {:tesla, "~> 1.8"},
-      {:oauth2, "~> 0.9"},
+      # FIXME: Updated from 0.9. Check 1.x changelog and above:
+      # https://hexdocs.pm/oauth2/changelog.html#v1-0-0-2019-03-13
+      {:oauth2, "~> 2.0"},
       {:temp, "~> 0.4"},
       {:jason, "~> 1.1"},
       {:poison, "~> 3.1"}
